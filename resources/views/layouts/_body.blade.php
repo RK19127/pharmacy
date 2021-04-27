@@ -7,7 +7,7 @@
                     <li class="{{ set_active(['/', '/*']) }}"><a href="{{url('/')}}" title=" @lang('navbar.dashboard')"
                                                                  data-toggle="tooltip"><i
                                     class="fa fa-tachometer fa fa-2x " aria-hidden="true"></i></a></li>
-                    <!-- <li class="dropdown" title=" @lang('navbar.products')" data-toggle="tooltip">
+                    <li class="dropdown" title=" @lang('navbar.products')" data-toggle="tooltip">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-medkit fa fa-2x">
                             </i><span class="caret"></span></a>
                         @if(outStockCount() + expiredCount() !== 0)
@@ -29,7 +29,7 @@
                             </a></li>
                         </ul>
                     </li>
-                    <li class="{{ set_active(['sales', 'sales/*']) }}"><a href="{{url('/sales/create')}}"
+                    <!-- <li class="{{ set_active(['sales', 'sales/*']) }}"><a href="{{url('/sales/create')}}"
                                                                           title="@lang('navbar.sell')"
                                                                           data-toggle="tooltip"><i
                                     class="fa fa-money fa fa-2x" aria-hidden="true"></i></a></li>
