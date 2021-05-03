@@ -29,7 +29,7 @@
                             </a></li>
                         </ul>
                     </li>
-                    <!-- <li class="{{ set_active(['sales', 'sales/*']) }}"><a href="{{url('/sales/create')}}"
+                 <li class="{{ set_active(['sales', 'sales/*']) }}"><a href="{{url('/sales/create')}}"
                                                                           title="@lang('navbar.sell')"
                                                                           data-toggle="tooltip"><i
                                     class="fa fa-money fa fa-2x" aria-hidden="true"></i></a></li>
@@ -41,7 +41,7 @@
                                                                                 title="@lang('navbar.category')"
                                                                                 data-toggle="tooltip"><i
                                     class="fa fa-list fa fa-2x" aria-hidden="true"></i></a></li>
-                    <li class="{{ set_active(['suppliers', 'suppliers/*']) }}"><a href="{{url('/suppliers')}}"
+                      <!--  <li class="{{ set_active(['suppliers', 'suppliers/*']) }}"><a href="{{url('/suppliers')}}"
                                                                                   title="@lang('navbar.provider')"
                                                                                   data-toggle="tooltip"><i
                                     class="fa fa-truck fa fa-2x" aria-hidden="true"></i></a></li>
