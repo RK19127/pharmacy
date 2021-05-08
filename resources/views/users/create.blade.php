@@ -30,8 +30,26 @@
                 <div class="col-sm-10">
                     <div class="togglebutton">
                         <label>
-                            <input checked="" id="togglePermission" name="permission" type="checkbox" value="1"/>
+                            <input checked="" id="togglePermission" name="permission" type="radio" value="1"/>
                             @lang('users.superadmin')
+                        </label>
+                    </div>
+                    <div class="togglebutton">
+                        <label>
+                            <input checked="" id="togglePermission1" name="permission" type="radio" value="2"/>
+                            Manager
+                        </label>
+                    </div>
+                    <div class="togglebutton">
+                        <label>
+                            <input checked="" id="togglePermission2" name="permission" type="radio" value="3"/>
+                            Cashier
+                        </label>
+                    </div>
+                    <div class="togglebutton">
+                        <label>
+                            <input checked="" id="togglePermission3" name="permission" type="radio" value="4"/>
+                            Pharmacist
                         </label>
                     </div>
                 </div>

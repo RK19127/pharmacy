@@ -30,17 +30,26 @@
                 <div class="col-sm-10">
                     <div class="togglebutton">
                         <label>
-                            <input id="togglePermission" name="permission" type="checkbox"
-                                   @if($users->roles_id === 1)
-                                   checked=""
-                                   value="1"
-                                   @elseif ($users->roles_id === 2)
-                                   value="2"
-                                   @else
-                                   value="2"
-                                    @endif />
+                            <input {{$users->roles_id==1?'checked':''}} id="togglePermission" name="permission" type="radio" value="1"/>
                             @lang('users.superadmin')
-
+                        </label>
+                    </div>
+                    <div class="togglebutton">
+                        <label>
+                            <input {{$users->roles_id==2?'checked':''}} id="togglePermission1" name="permission" type="radio" value="2"/>
+                            Manager
+                        </label>
+                    </div>
+                    <div class="togglebutton">
+                        <label>
+                            <input {{$users->roles_id==3?'checked':''}} id="togglePermission2" name="permission" type="radio" value="3"/>
+                            Cashier
+                        </label>
+                    </div>
+                    <div class="togglebutton">
+                        <label>
+                            <input {{$users->roles_id==4?'checked':''}} id="togglePermission3" name="permission" type="radio" value="4"/>
+                            Pharmacist
                         </label>
                     </div>
                 </div>

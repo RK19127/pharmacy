@@ -29,7 +29,13 @@
                                 <td>{{$user->name}}</td>
                                 <td>{{$user->email}}</td>
                                 <td>
-                                    <span class="label label-danger">@if($user->roles_id === 1) @lang('users.superadmin')@else @lang('users.admin') @endif </span>
+                                    <span class="label label-danger">
+                                        @if($user->roles_id == '1') @lang('users.superadmin')
+                                        @elseif($user->roles_id == '2') Manager
+                                        @elseif($user->roles_id == '3') Cashier
+                                        @elseif($user->roles_id == '4') Pharmacist
+                                        @else @lang('users.admin') @endif 
+                                    </span>
                                 </td>
                                 <td>{{date('d-M-Y-g:i',strtotime($user->created_at))}}</td>
                                 <td>{{date('d-M-Y-g:i',strtotime($user->created_at))}}</td>

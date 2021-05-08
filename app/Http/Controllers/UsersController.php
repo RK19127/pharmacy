@@ -54,10 +54,21 @@ class UsersController extends Controller
         $this->validate($request, array(
             'name' => 'required|max:50',
             'email' => 'required|max:100',
-            'password' => 'required|max:100'
+            'password' => 'required|max:100',
+            'permission' =>'required',
         ));
-
-        session()->flash('success', 'Your account has been updated!');
+        
+        $user = User::create([
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'password' => bcrypt($request->input('password'))
+        ]);
+        DB::table('roles_user')->insert([
+            'roles_id' => $request->input('permission'),
+            'user_id' => $user->id,
+        ]);
+        
+        session()->flash('success', 'Your account has been created!');
         return redirect()->route('users.index');
     }
 
@@ -117,4 +128,3 @@ class UsersController extends Controller
         return response(['msg' => 'Failed deleting the product', 'status' => 'failed']);
 }
 }
-
