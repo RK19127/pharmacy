@@ -86,9 +86,9 @@
                             <li><a href="{{url('/setting/other')}}"><i class="fa fa-barcode fa fa-2x"
                                                                        aria-hidden="true"></i>
                                     <p> @lang('navbar.other')</p></a></li>
-                            <li><a href="{{url('/setting/backup')}}"><i class="fa fa-cloud fa fa-2x"
+                            <!-- <li><a href="{{url('/setting/backup')}}"><i class="fa fa-cloud fa fa-2x"
                                                                         aria-hidden="true"></i>
-                                    <p> @lang('navbar.backup')</p></a></li>
+                                    <p> @lang('navbar.backup')</p></a></li> -->
 
                         </ul>
                     </li>   <!-- end li #settingNav-->
