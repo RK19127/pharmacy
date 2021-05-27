@@ -165,6 +165,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Spatie\Backup\BackupServiceProvider::class,
         RachidLaasri\LaravelInstaller\Providers\LaravelInstallerServiceProvider::class,
+        Vigneshc91\LaravelTestGenerator\TestGeneratorServiceProvider::class,
 
         /*
          * Package Service Providers...
